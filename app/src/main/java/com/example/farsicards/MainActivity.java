@@ -14,4 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Austin's comment
     // Did you know? Bubble wrap was originally invented as wallpaper.
+
+    //Stephen's comment
+    //I've now made our comments inconsistent because I didn't put a space at the start of mine.
 }
