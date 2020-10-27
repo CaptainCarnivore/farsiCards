@@ -18,5 +18,6 @@ public class MainActivity extends AppCompatActivity {
     //Stephen's comment
     //I've now made our comments inconsistent because I didn't put a space at the start of mine.
 
-    //THE DRUMS OF WAR ARE BEATING, NO MAN CAN BE TRUSTED
+    // Austin's Second Comment
+    // This'll be a conflict fer sure
 }
