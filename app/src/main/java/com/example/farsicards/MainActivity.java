@@ -11,4 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    // Austin's comment
+    // Did you know? Bubble wrap was originally invented as wallpaper.
 }
