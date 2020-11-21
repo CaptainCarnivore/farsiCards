@@ -10,9 +10,10 @@
         android:id="@+id/wordTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WordText"
+        android:fontFamily="@font/mirza"
+        android:text="دوست دارم"
         android:textColor="#FF686B"
-        android:textSize="48sp"
+        android:textSize="64sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +53,7 @@
             android:background="#0000"
             android:onClick="ToggleTaggedWord"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/star" />
+            app:srcCompat="@drawable/star_filled" />
 
         <ImageButton
             android:id="@+id/imageButton4"
@@ -69,8 +70,8 @@
     <ImageButton
         android:id="@+id/imageButton"
         android:scaleType="fitCenter"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:background="#0000"
         android:maxWidth="16dp"
