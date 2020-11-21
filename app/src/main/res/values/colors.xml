@@ -7,4 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="eggshell">#ede7e3</color>
+    <color name="independence_purple_light">#16697a</color>
+    <color name="independence_purple">#489fb5</color>
+    <color name="terra_cotta">#82c0cc</color>
+
+
+
+    <color name="dark_cool">#84dcc6</color>
+    <color name="light_cool">#A5ffd6</color>
+
+
+    <color name="dark_warm">#ff686b</color>
+    <color name="light_warm">#ffa69e</color>
+
 </resources>
