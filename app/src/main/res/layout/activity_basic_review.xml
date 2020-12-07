@@ -7,12 +7,58 @@
     tools:context=".BasicReviewActivity">
 
     <TextView
+        android:id="@+id/wordTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:fontFamily="@font/mirza"
+        android:shadowColor="@color/black"
+        android:shadowDx="-8"
+        android:shadowDy="8"
+        android:shadowRadius="50"
+        android:text="دوست دارم"
+        android:textColor="#E4000000"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <TextView
+        android:id="@+id/wordTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/mirza"
+        android:shadowColor="@color/black"
+        android:shadowDx="-8"
+        android:shadowDy="8"
+        android:shadowRadius="50"
+        android:text="دوست دارم"
+        android:textColor="#DD000000"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <TextView
         android:id="@+id/wordTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/mirza"
+        android:shadowColor="@color/black"
+
+        android:shadowDx="-8"
+        android:shadowDy="8"
+        android:shadowRadius="50"
         android:text="دوست دارم"
-        android:textColor="#FF686B"
+        android:textColor="@color/text_purple"
         android:textSize="64sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

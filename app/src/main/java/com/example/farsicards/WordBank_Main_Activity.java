@@ -2,6 +2,7 @@ package com.example.farsicards;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -15,22 +16,16 @@ public class WordBank_Main_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        DatabaseManager db = new DatabaseManager(this);
         setContentView(R.layout.activity_word_bank__main);
 
     }
 
-    /*
-    Toggle Book Display
-    toggles hiding the children chapter buttons
-     */
-    public void ToggleBookDisplayVol1(View view){
-        is_vol_1_expanded = !is_vol_1_expanded;
-        LinearLayout layout = findViewById(R.id.vol1_chapter_list);
-        if (is_vol_1_expanded){
-            layout.setVisibility(View.VISIBLE);
-        }else{
+    public void ReturnToMainMenu(View view){
+        Intent mainIntent = new Intent(this, MainActivity.class);
 
-            layout.setVisibility(View.GONE);
-        }
+        startActivity(mainIntent);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
+
 }

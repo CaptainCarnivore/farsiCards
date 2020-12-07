@@ -4,97 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/eggshell"
     tools:context=".WordBank_Main_Activity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background ="#FFFFFF">
+    <Button
+        android:id="@+id/Vol1_Button"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/dark_cool"
+        android:fontFamily="@font/oswaldfont"
+        android:text="@string/vol_1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:backgroundTint="@color/dark_warm"
+        app:layout_constraintBottom_toTopOf="@+id/vol2_Button"
+        app:layout_constraintEnd_toEndOf="@+id/vol2_Button"
+        app:layout_constraintStart_toStartOf="@+id/vol2_Button" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="0dp" >
+    <Button
+        android:id="@+id/vol1_Button2"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/dark_cool"
+        android:fontFamily="@font/oswaldfont"
+        android:text="@string/vol_1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:backgroundTint="@color/dark_warm"
+        app:layout_constraintEnd_toEndOf="@+id/vol2_Button"
+        app:layout_constraintStart_toStartOf="@+id/vol2_Button"
+        app:layout_constraintTop_toBottomOf="@+id/vol2_Button" />
 
-            <LinearLayout
-                android:id="@+id/Book1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="0dp">
+    <Button
+        android:id="@+id/vol2_Button"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/dark_cool"
+        android:fontFamily="@font/oswaldfont"
+        android:text="@string/vol_2"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:backgroundTint="@color/dark_warm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginRight="0dp"
-                    android:background="@drawable/word_bank_category_buttons"
-                    android:onClick="ToggleBookDisplayVol1"
-                    android:text="Farsi of Iran Today Vol. 1"
-                    android:textColor="@color/white"
-                    android:textSize="24sp"
-                    app:backgroundTint="@color/dark_warm" />
-
-                <LinearLayout
-                    android:id="@+id/vol1_chapter_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:visibility="gone">
-
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="0dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginRight="0dp"
-                        android:background="@drawable/word_bank_category_buttons"
-                        android:text="Chapter 1"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="18sp"
-                        app:backgroundTint="@color/dark_cool" />
-
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="0dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginRight="0dp"
-                        android:background="@drawable/word_bank_category_buttons"
-                        android:text="Chapter 2"
-                        android:textAlignment="textStart"
-                        android:textColor="@color/black"
-                        android:textSize="18sp"
-                        app:backgroundTint="@color/light_cool" />
-
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginRight="0dp"
-                    android:background="@drawable/word_bank_category_buttons"
-                    android:text="Button"
-                    android:textSize="24sp"
-                    app:backgroundTint="@color/dark_warm" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:visibility="invisible"></LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-
-
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#0000"
+        android:onClick="ReturnToMainMenu"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 </androidx.constraintlayout.widget.ConstraintLayout>

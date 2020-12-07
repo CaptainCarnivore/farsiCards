@@ -6,6 +6,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="gray">#EE000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="eggshell">#ede7e3</color>
@@ -18,6 +19,7 @@
     <color name="dark_cool">#84dcc6</color>
     <color name="light_cool">#A5ffd6</color>
 
+    <color name="text_purple">#FF4836B1</color>
 
     <color name="dark_warm">#ff686b</color>
     <color name="light_warm">#ffa69e</color>

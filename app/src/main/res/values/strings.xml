@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">farsiCards</string>
+    <string name="vol_1">Persian of Iran Today Vol. 1</string>
+    <string name="vol_2">Persian of Iran Today Vol. 2</string>
 </resources>
