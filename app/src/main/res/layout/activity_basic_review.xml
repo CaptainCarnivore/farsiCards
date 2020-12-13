@@ -7,59 +7,19 @@
     tools:context=".BasicReviewActivity">
 
     <TextView
-        android:id="@+id/wordTextView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="-1dp"
-        android:layout_marginEnd="-1dp"
-        android:layout_marginRight="-1dp"
-        android:fontFamily="@font/mirza"
-        android:shadowColor="@color/black"
-        android:shadowDx="-8"
-        android:shadowDy="8"
-        android:shadowRadius="50"
-        android:text="دوست دارم"
-        android:textColor="#E4000000"
-        android:textSize="64sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35000002" />
-
-    <TextView
-        android:id="@+id/wordTextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:fontFamily="@font/mirza"
-        android:shadowColor="@color/black"
-        android:shadowDx="-8"
-        android:shadowDy="8"
-        android:shadowRadius="50"
-        android:text="دوست دارم"
-        android:textColor="#DD000000"
-        android:textSize="64sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35000002" />
-
-    <TextView
         android:id="@+id/wordTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/mirza"
-        android:shadowColor="@color/black"
 
-        android:shadowDx="-8"
-        android:shadowDy="8"
-        android:shadowRadius="50"
         android:text="دوست دارم"
         android:textColor="@color/text_purple"
         android:textSize="64sp"
+        android:shadowColor="#88000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,19 +47,41 @@
             android:layout_marginTop="32dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_corners_red"
+            android:onClick="SubmitUnknown"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/nope_white" />
 
-        <ImageButton
-            android:id="@+id/TagButton"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_marginBottom="32dp"
-            android:layout_weight="1"
-            android:background="#0000"
-            android:onClick="ToggleTaggedWord"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/star_filled" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/TagButton"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:onClick="ToggleTaggedWord"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/tag_fill"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/star_filled" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageButton
             android:id="@+id/imageButton4"
@@ -108,6 +90,7 @@
             android:layout_marginTop="32dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_corners"
+            android:onClick="SubmitKnown"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/check_white" />
 
@@ -115,12 +98,13 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:scaleType="fitCenter"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:background="#0000"
         android:maxWidth="16dp"
+        android:onClick="FlipOver"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wordTextView"
@@ -132,25 +116,13 @@
         android:layout_height="32dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:alpha=".6"
         android:background="#0000"
+        android:onClick="ReturnToChapterSelect"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:scaleType="fitCenter"
-        android:background="#0000"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/audio_on" />
 </androidx.constraintlayout.widget.ConstraintLayout>

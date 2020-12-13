@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FarsiCards">
-        <activity android:name=".Book_Chapter_List_Activity"></activity>
+        <activity android:name=".ChapterSelection"></activity>
+        <activity android:name=".BookSelection" />
+        <activity android:name=".Book_Chapter_List_Activity" />
         <activity android:name=".AnimationTestActivity" />
         <activity android:name=".BasicReviewActivity" />
         <activity android:name=".WordBank_Main_Activity" />

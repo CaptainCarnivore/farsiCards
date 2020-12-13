@@ -18,6 +18,7 @@ public class WordCard {
     @NonNull private String farsi_sentence_written;
     @NonNull private String farsi_sentence_spoken;
     @NonNull private boolean has_spoken_variation;
+    @NonNull private boolean is_tagged;
 
 
 
@@ -97,5 +98,13 @@ public class WordCard {
 
     public void setHas_spoken_variation(boolean has_spoken_variation) {
         this.has_spoken_variation = has_spoken_variation;
+    }
+
+    public boolean isIs_tagged() {
+        return is_tagged;
+    }
+
+    public void setIs_tagged(boolean is_tagged) {
+        this.is_tagged = is_tagged;
     }
 }

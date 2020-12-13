@@ -11,16 +11,19 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
-        app:layout_constraintBottom_toTopOf="@+id/wordbank_layout"
-        app:layout_constraintEnd_toEndOf="@+id/wordbank_layout"
-        app:layout_constraintStart_toStartOf="@+id/wordbank_layout">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87">
 
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="0.5in"
             android:layout_height="0.5in"
             android:background="@drawable/circle_button"
+            android:onClick="OpenBookSelect"
             android:scaleType="fitCenter" />
 
         <ImageView
@@ -31,58 +34,79 @@
             android:scaleType="fitCenter" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/wordbank_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86">
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="0.5in"
-            android:layout_height="0.5in"
-            android:background="@drawable/circle_button"
-            android:onClick="OpenWordBank"
-            android:scaleType="fitCenter" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="0.5in"
-            android:layout_height="0.5in"
-            android:background="@drawable/button_border"
-            android:scaleType="fitCenter"
-            app:layout_constraintStart_toStartOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:fontFamily="@font/oswald"
-        android:text="Wordbank"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wordbank_layout"
-        app:layout_constraintStart_toEndOf="@+id/wordbank_layout"
-        app:layout_constraintTop_toTopOf="@+id/wordbank_layout" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="-8dp"
         android:fontFamily="@font/oswald"
         android:text="Review"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout2" />
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/backgroundword_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mirza"
+        android:text="سلام"
+        android:textColor="#1E000000"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/backgroundword_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mirza"
+        android:text="خانواده"
+        android:textColor="#D3D3D3"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <TextView
+        android:id="@+id/backgroundword_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mirza"
+        android:text="دوست دارم"
+        android:textColor="#D3D3D3"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="@string/app_title"
+        android:textAllCaps="false"
+        android:textSize="72sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
